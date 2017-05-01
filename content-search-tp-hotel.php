@@ -55,7 +55,8 @@ if (!isset($field_size)) $field_size = '';
 ?>
 <h2 class='mb20'><?php echo esc_html($st_title_search) ?></h2>
 <?php $link = st()->get_option('custom_flight_search_link', ''); ?>
-<form role="search" method="get" class="search main-search" action="https://search.hotellook.com/" target="_blank">
+<form role="search" method="get" class="search main-search" action="http://travel.youpitravel.com/hotels" target="_self">
+    <input type="hidden" name="with_request" value="true">
     <input type="hidden" name="marker" value="<?php echo esc_attr($marker); ?>">
     <div class="row">
         <?php
